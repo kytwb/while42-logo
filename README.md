@@ -7,11 +7,11 @@ The result can be seen [here](http://kytwb.github.io/while42-logo/).
 ``` html
 <!DOCTYPE html>
 <html>
-  <body>                                                                                                                                                                  
+  <body>
     <canvas id="canvas"></canvas>
-    <script src="srcs/script.js"></script>                                                                                                                                
+    <script src="srcs/script.js"></script>
     <script>
-        new Logo().render(document.getElementById('canvas').getContext('2d'));                                                                                            
+        new Logo().render(document.getElementById('canvas').getContext('2d'));
     </script>
   </body>
 </html>
