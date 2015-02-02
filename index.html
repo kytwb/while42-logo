@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <style>
+      * { margin:0; padding:0; }
+      html, body { width:100%; height:100%; }
+      canvas { display:block; }
+    </style>
+  </head>
+  <body>
+    <canvas id="canvas"></canvas>
+    <script src="script.js"></script>
+    <script>
+      (function(logoCanvas) {
+        var logo = new Logo();
+        var canvas = document.getElementById(logoCanvas);
+        var context = canvas.getContext('2d');
+        window.addEventListener('resize', resizeCanvas, false);
+        function resizeCanvas() {
+          canvas.width = window.innerWidth;
+          canvas.height = window.innerHeight;
+          logo.render(context);
+        }
+        resizeCanvas();
+      })('canvas');
+    </script>
+  </body>
+</html>
