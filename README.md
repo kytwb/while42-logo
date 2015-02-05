@@ -11,7 +11,7 @@ The result can be seen [here](http://kytwb.github.io/while42-logo/).
     <canvas id="canvas"></canvas>
     <script src="srcs/script.js"></script>
     <script>
-        new Logo().render(document.getElementById('canvas').getContext('2d'));
+        new while42.logo.constructor().render(document.getElementById('canvas').getContext('2d'));
     </script>
   </body>
 </html>

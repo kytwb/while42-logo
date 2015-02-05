@@ -1,3 +1,11 @@
+var while42 = {
+  logo: {
+    constructor: Logo,
+    DEFAULT_BLOCKSIZE: 3.8,
+    DEFAULT_GAPSIZE: 8.4
+  }
+};
+
 function Block(blockSize, coordinates) {
   this.width = blockSize;
   this.height = blockSize;
@@ -15,8 +23,8 @@ function Logo(blockSize) {
   var _this = this;
   _this.width = 0;
   _this.height = 0;
-  _this.blockSize = blockSize || 3.8;
-  _this.blockGapSize = _this.blockSize / 8.4;
+  _this.blockSize = blockSize || while42.logo.DEFAULT_BLOCKSIZE;
+  _this.blockGapSize = _this.blockSize / while42.logo.DEFAULT_GAPSIZE;
   _this.blocks = [
     [0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 2, 0, 1, 1, 0, 2, 1, 1, 1, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 0, 1, 1, 1, 0, 2, 0, 1, 1, 1, 1, 1, 0],
     [0, 0, 0, 0, 0, 0, 0, 0, 2, 1, 1, 0, 0, 0, 0, 2, 0, 0, 0, 0, 2, 0, 1, 1, 0, 2, 0, 0, 0, 0, 0, 0, 2, 0, 0, 1, 1, 1, 1, 0, 2, 1, 1, 0, 0, 0, 1, 1],
