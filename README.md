@@ -1,6 +1,6 @@
 # while42-logo
 Open-source while42 logo using HTML5 canvas.  
-The result can be seen [here](http://kytwb.github.io/while42-logo/).
+The result can be seen [here](http://while42-org.github.io/while42-logo/).
 
 ### Example
 
